@@ -9,23 +9,28 @@
         <link rel="stylesheet" type="text/css" href="assets/css/main.css">
         <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
         <link rel="stylesheet" type="text/css" href="assets/css/nd-grid.css">
+
+        <script src="js/go_to.js" async defer></script>
     </head>
 
     <body>
-        <header style="position: relative">
-            <img class="header-background" src="assets/images/header_background.jpg" />
-
+        <header class="header-background">
             <div class="header-text">
-                <div>
-                    <img src="assets/images/logo.svg" />
-                    <ul>
-                        <li>Serviços</li>
-                        <li>Equipe</li>
-                        <li>Portfólio</li>
-                        <li>Sobre</li>
-                        <li>Contato</li>
-                        <li><div class="btn btn-primary">Seu orçamento</div></li>
-                    </ul>
+                <div class="nd-row">
+                    <div class="nd-col" style="max-width: 35px;">
+                        <img src="assets/images/logo.svg" />
+                    </div>
+                    
+                    <div class="nd-col nd-text-right">
+                        <ul>
+                            <li onclick="goTo('service')">Serviços</a></li>
+                            <li onclick="goTo('team')">Equipe</li>
+                            <!-- <li>Portfólio</li> -->
+                            <li onclick="goTo('about')">Sobre</li>
+                            <li onclick="goTo('contact')">Contato</li>
+                            <li><div class="btn btn-primary orcamento">Seu orçamento</div></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div style="text-align: center">
@@ -33,13 +38,13 @@
                     <span class="header-subtitle">DESENVOLVIMENTO WEB</span>
                     <span class="header-description">sites e aplicações sob medida para você</span>
 
-                    <div class="btn btn-primary">Quero um orçamento</div>
+                    <div class="btn btn-primary quero-orcamento">Quero um orçamento</div>
                 </div>
             </div>
         </header>
 
         <section>
-            <span class="slogan">
+            <span class="slogan" id="service">
                 Nós criamos o <b>produto</b> perfeito para atender seus 
                 <b>desejos</b> e <b>necessidades</b>
             </span>
@@ -86,7 +91,7 @@
             </div>
         </section>
 
-        <section class="do-section">
+        <section class="do-section" id="about">
             <span class="do-section-title">Como Fazemos Isso</span>
 
             <div class="do-area nd-row nd-text-center">
@@ -140,7 +145,7 @@
             </div>
         </section>
 
-        <section class="team-section">
+        <section class="team-section" id="team">
             <span class="do-section-title">Nossa Equipe</span>
             <div class="nd-row nd-text-center">
                 <div class="nd-col">
@@ -172,40 +177,97 @@
             </div>
         </section>
 
-        <section class="team-section">
+        <section class="contact-section" id="contact">
             <span class="do-section-title">Contato</span>
 
-            <div class="nd-row">
-                <div class="nd-col">
-                    <span>(19) 97150-0685 / (19) 97150-0685</span>
+            <div class="contact-background">
+                <div class="nd-row">
+                    <div class="nd-col">
+                        <div class="contact-list">
+                            <div>
+                                <img src="assets/images/contact/tel.svg" />
+                                <span>(19) 97150-0685 / (19) 97150-0685</span>
+                            </div>
+                            <div>
+                                <img src="assets/images/contact/whats.svg" />
+                                <span>(19) 97150-0685 / (19) 97150-0685</span>
+                            </div>
+                            <div>
+                                <img src="assets/images/contact/email.svg" />
+                                <span>contato@natusdev.com</span>
+                            </div>
+
+                            <div class="btn btn-primary whatsapp">
+                                <img src="assets/images/contact/whats-white.svg" style="margin: 0"/>
+                                <span>Fale conosco via WhatsApp</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="nd-col" style="border-left: 1px solid #5A5A5A;">
+                        <form>
+                            <label>
+                                Seu nome
+                                <input />
+                            </label>
+                            <label>
+                                Seu email
+                                <input />
+                            </label>
+                            <label>
+                                Seu mensagem
+                                <textarea></textarea>
+                            </label>
+
+                            <div class="btn btn-primary send">Enviar</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+        <section class="about">
+            <img src="assets/images/logo_colour.svg" />
+
+            <span class="about-title">NatusDEV</span>
+
+            <span class="about-text">
+                Somos uma empresa de desenvolvimento e tecnologia focada
+                na criação de sites responsivos e personalizados.
+            </span>
+        </section>
+
+
+        <footer class="nd-row">
+            <div class="nd-col">
+                <div class="footer-menu">
+                    <span onclick="goTo('service')">Serviços</span>
+                    <span onclick="goTo('team')">Equipe</span>
+                    <!-- <span>Portfólio</span> -->
+                    <span onclick="goTo('about')">Sobre</span>
+                    <span onclick="goTo('contact')">Contato</span>
+                </div>
+            </div>
+            <div class="nd-col">
+                <div class="contact-list footer">
                     <span>(19) 97150-0685 / (19) 97150-0685</span>
                     <span>contato@natusdev.com</span>
-
-                    <div>Fale conosco via WhatsApp</div>
+                    <div>
+                        <img src="assets/images/footer/facebook.svg" />
+                        <img src="assets/images/footer/instagram.svg" />
+                        <img src="assets/images/footer/linkedin.svg" />
+                    </div>
                 </div>
-
-                
-                <div class="nd-col">
-                    <form>
-                        <label>
-                            Seu nome
-                            <input />
-                        </label>
-                        <label>
-                            Seu nome
-                            <input />
-                        </label>
-                        <label>
-                            Seu nome
-                            <textarea>
-
-                            </textarea>
-                        </label>
-                    </form>
-                </div>
-
             </div>
+        </footer>
 
-        </section>
+        <div class="nd-row">
+            <div class="nd-col pattern-final-web nd-text-center">
+                <div>
+                    <img src="assets/images/logo_colour.svg" />
+                    <span>NatusDEV</span>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

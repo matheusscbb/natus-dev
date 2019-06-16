@@ -8,6 +8,7 @@ body {
 
 header {
     min-height: 100%;
+    position: relative;
 
     color: #FFF;
 }
@@ -33,26 +34,81 @@ section {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+
+    cursor: pointer;
 }
 
 .btn-primary {
     color: #fff;
     background-color: #32BE8B;
+
+    border-radius: 25px;
+}
+
+.btn-primary.orcamento {
+    width: 200px;
+    height: 28px;
+    padding-top: 6px;
+}
+
+.btn-primary.quero-orcamento {
+    margin-top: 20px;
+    width: 304px;
+    height: 34px;
+    padding-top: 10px;
+}
+
+.btn-primary.whatsapp {
+    width: 340px;
+    height: 34px;
+    padding-top: 10px;
+
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.btn-primary.send {
+    width: 300px;
+    height: 34px;
+    padding-top: 10px;
 }
 
 /* HEADER */
 .header-background {
+    background: url('../images/header_background.jpg') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
     width: 100%;
-    height: auto;
-    min-height: 100%;
+    height: 80vh;
+    min-height: 556px;
 }
 
 .header-text {
-    position: absolute;
-    top: 0;
+    margin: auto;
+    padding-top: 30px;
+    
     width: 100%;
+    max-width: 1024px;
 
     z-index: 20;
+}
+
+.header-text .nd-row {
+    margin: auto;
+}
+
+.header-text ul li {
+    margin-right: 39px;
+    font-size: 16px;
+    line-height: 22px;
+
+    cursor: pointer;
+}
+.header-text ul li:last-of-type {
+    margin-left: 0;
 }
 
 .header-title {    
@@ -61,6 +117,8 @@ section {
     line-height: 98px;
     letter-spacing: 0.45em;
     display: block;
+
+    margin-top: 5vw;
 }
 
 .header-subtitle {    
@@ -69,15 +127,19 @@ section {
     line-height: 49px;
     letter-spacing: 0.2em;
     display: block;
+
+    margin-top: -20px;
 }
 
 .header-description {
     font-size: 24px;
     line-height: 33px;
     display: block;
+
+    margin-top: 20px;
 }
 
-/* 1st SECTION */
+/* 1 SECTION */
 .slogan {
     font-size: 32px;
     line-height: 44px;
@@ -92,7 +154,11 @@ section {
     max-width: 934px;
 
     margin: auto;
-    margin-top: 130px;
+    margin-top: 120px;
+}
+
+.presentation-area:last-of-type {
+    margin-bottom: 120px;
 }
 
 .presentation-area img {
@@ -110,6 +176,7 @@ section {
     margin: 0 54px 0 0; 
 }
 
+.about-title,
 .do-section-title,
 .presentation-title {
     font-weight: bold;
@@ -127,7 +194,7 @@ section {
     display: block;
 }
 
-/* 2st SECTION */
+/* 2 SECTION */
 .do-section {
     background: rgba(255, 255, 255, 0.65);
     border: 1px solid #D9D7D7;
@@ -145,6 +212,7 @@ section {
 }
 
 .do-area {
+    padding-bottom: 80px;
 }
 
 .do-box {
@@ -156,6 +224,14 @@ section {
 
 .do-img-box {
     height: 138px;
+    padding-bottom: 16px;
+}
+
+.do-area  .nd-col:nth-of-type(1) img {
+    margin-top: 12px;
+}
+.do-area  .nd-col:nth-of-type(2) img {
+    margin-top: 34px;
 }
 
 .do-title {
@@ -185,7 +261,12 @@ section {
     color: #5A5A5A;
 }
 
-/* 3st SECTION */
+/* 3 SECTION */
+.contact-section,
+.team-section {
+    margin-top: 95px;
+}
+
 .team-member {
     text-align: center;
     max-width: 280px;
@@ -220,4 +301,201 @@ section {
     color: #FF9A35;
 }
 
-/* 4st SECTION */
+/* 4 SECTION */
+.contact-section {
+    max-width: unset;
+}
+
+.contact-section .nd-row {
+    margin: auto;
+    max-width: 1024px;
+}
+
+.contact-background {
+    background: url('../images/contact/fundo.svg') no-repeat center center;
+    width: 100%;
+    padding-bottom: 130px;
+}
+.contact-list {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+
+    color: #7D7A7A;
+
+    max-width: 430px;
+    margin: auto;
+}
+
+.contact-list div {
+    margin-bottom: 30px;
+}
+
+.contact-list div:last-of-type {
+    margin-bottom: 0;
+}
+
+.contact-list div span {
+    vertical-align: top;
+}
+
+.contact-list div img {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    
+    color: #5A5A5A;
+}
+
+form label input,
+form label textarea {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+
+    display: block;
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    padding: 10px;
+    color: #5A5A5A;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+form label input {
+    height: 35px;
+    max-width: 400px;
+}
+
+form label textarea {
+    height: 200px;
+    max-width: 400px;
+}
+
+/* 5 SECTION */
+.about {
+    max-width: 625px;
+    text-align: center;
+    padding-bottom: 68px;
+}
+
+.about img,
+.about span {
+    display: block;
+}
+
+.about img {
+    margin: auto;
+}
+
+.about-text {
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #5A5A5A;
+}
+
+.about-title {
+    margin: 10px 0 13px 0;
+}
+
+/* footer */
+footer {
+    background: url('../images/footer/fundo.svg') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    width: 100%;
+    height: 40vh;
+    min-height: 282px;
+}
+
+footer .nd-col {
+    position: relative;
+}
+
+.footer-menu {
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #FFF;
+    border-left: 1px solid #fff;
+
+    position: absolute;
+    margin-left: 50px;
+    bottom: 20px;
+}
+
+.footer-menu span {
+    display: block;
+    padding-left: 50px;
+    margin-bottom: 10px;
+}
+
+.contact-list.footer {
+    text-align: right;
+    position: absolute;
+    padding-right: 50px;
+    bottom: 20px;
+    right: 50px;
+
+    font-weight: normal;
+
+    color: #fff;
+    border-right: 1px solid #fff;
+}
+
+.contact-list.footer span {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.contact-list.footer img {
+    margin-right: 10px;
+}
+
+.contact-list.footer img:last-of-type {
+    margin-right: 0;
+}
+
+.pattern-final-web {
+    height: 41px;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+
+    color: #FFF;
+    background: #1C0E43;
+}
+
+.pattern-final-web div {
+    margin-top: 10px;
+}
+
+.pattern-final-web img {
+    height: 20px;
+    width: 20px;
+}
+
+.pattern-final-web span {
+    vertical-align: top;
+}
