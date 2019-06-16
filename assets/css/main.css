@@ -448,6 +448,8 @@ footer .nd-col {
     display: block;
     padding-left: 50px;
     margin-bottom: 10px;
+
+    cursor: pointer;
 }
 
 .contact-list.footer {
