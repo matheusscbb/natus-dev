@@ -132,8 +132,7 @@ section {
     letter-spacing: 0.45em;
     display: block;
 
-    margin-right: -0.45em;
-
+    margin-left: 0.45em;
     margin-top: 7vw;
 }
 
@@ -384,7 +383,7 @@ form label {
     font-size: 18px;
     line-height: 25px;
 
-    width: 100%;
+    width: 80%;
     
     color: #5A5A5A;
 }
