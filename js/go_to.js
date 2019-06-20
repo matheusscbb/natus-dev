@@ -3,7 +3,7 @@ function goTo(div) {
         if(div === "contact"){
             setTimeout(function(){
                 document.getElementById("name").focus();
-            }, 750);
+            }, 1000);
              
         }
 }
