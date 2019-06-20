@@ -29,6 +29,7 @@ section {
 }
 
 /* BUTTON */
+
 .btn {
     border: none;
     text-align: center;
@@ -42,35 +43,48 @@ section {
     color: #fff;
     background-color: #32BE8B;
 
-    border-radius: 25px;
+    border-radius: 35px;
 }
 
 .btn-primary.orcamento {
+    background-color: transparent;
+    border: 1px solid #fff;
+
     width: 200px;
     height: 28px;
     padding-top: 6px;
 }
 
 .btn-primary.quero-orcamento {
-    margin-top: 20px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 30px;
+
+    margin-top: 40px;
     width: 304px;
-    height: 34px;
-    padding-top: 10px;
+    height: 45px;
+    padding-top: 15px;
 }
 
-.btn-primary.whatsapp {
-    width: 340px;
-    height: 34px;
-    padding-top: 10px;
+.btn-primary.quero-orcamento:hover, .btn-primary.send:hover {
+    background-color: rgb(56, 201, 153);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.25s;
+}
 
-    font-size: 16px;
-    line-height: 26px;
+.btn-primary.orcamento:hover {
+    background-color: #fff;
+    color: #855AFE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
 }
 
 .btn-primary.send {
+    font-weight: 800;
     width: 300px;
     height: 34px;
     padding-top: 10px;
+    
 }
 
 /* HEADER */
@@ -118,17 +132,22 @@ section {
     letter-spacing: 0.45em;
     display: block;
 
-    margin-top: 5vw;
+    margin-right: -0.45em;
+
+    margin-top: 7vw;
 }
 
 .header-subtitle {    
     font-weight: 300;
-    font-size: 36px;
+    font-size: 26px;
     line-height: 49px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     display: block;
 
-    margin-top: -20px;
+    color: #D5C6FF;
+
+    margin-top: -10px;
 }
 
 .header-description {
@@ -141,7 +160,7 @@ section {
 
 /* 1 SECTION */
 .slogan {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 44px;
     text-align: center;
     
@@ -182,6 +201,7 @@ section {
     font-weight: bold;
     font-size: 32px;
     line-height: 44px;
+    margin-bottom: 30px;
 
     display: block;
 }
@@ -262,9 +282,17 @@ section {
 }
 
 /* 3 SECTION */
-.contact-section,
-.team-section {
-    margin-top: 95px;
+.contact-section {
+    margin-top: 110px;
+}
+
+.team-section{
+    margin-bottom: 95px;
+}
+
+.team-section .do-section-title{
+    font-size: 28px;
+    padding-bottom: 45px;
 }
 
 .team-member {
@@ -278,6 +306,7 @@ section {
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 0.2em;
+    margin-top: 20px;
 
     display: block;
 }
@@ -347,14 +376,20 @@ section {
 }
 
 form {
-    max-width: 400px;
+    max-width: 600px;
     margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 form label {
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
+
+    width: 100%;
     
     color: #5A5A5A;
 }
@@ -370,7 +405,7 @@ form label textarea {
     display: block;
     width: 100%;
 
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     padding: 10px;
     color: #5A5A5A;
@@ -378,14 +413,20 @@ form label textarea {
     font-family: 'Open Sans', sans-serif;
 }
 
+form label input:focus,
+form label textarea:focus {
+    outline: 2px solid #A98BFF;
+    -moz-outline-radius: 4px;
+}
+
 form label input {
     height: 35px;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 form label textarea {
     height: 200px;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 /* 5 SECTION */
@@ -465,10 +506,22 @@ footer .nd-col {
     border-right: 1px solid #fff;
 }
 
+.whats-footer{
+    width: 24px;
+    padding-right: 15px;
+    margin-bottom: -5px;
+}
+
 .contact-list.footer span {
     margin-bottom: 20px;
     display: block;
 }
+
+.contact-list.footer a {
+    padding: 0px;
+    margin-left: 5px
+}
+
 
 .contact-list.footer img {
     margin-right: 10px;

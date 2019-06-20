@@ -25,20 +25,17 @@
                         <ul>
                             <li onclick="goTo('service')">Serviços</a></li>
                             <li onclick="goTo('team')">Equipe</li>
-                            <!-- <li>Portfólio</li> -->
                             <li onclick="goTo('about')">Sobre</li>
-                            <li onclick="goTo('contact')">Contato</li>
-                            <li><div class="btn btn-primary orcamento">Seu orçamento</div></li>
+                            <li><div onclick="goTo('contact')" class="btn btn-primary orcamento">Fale conosco</div></li>
                         </ul>
                     </div>
                 </div>
 
                 <div style="text-align: center">
                     <span class="header-title">NATUS DEV</span>
-                    <span class="header-subtitle">DESENVOLVIMENTO WEB</span>
-                    <span class="header-description">sites e aplicações sob medida para você</span>
+                    <span class="header-subtitle">sites e aplicações sob medida para você</span>
 
-                    <div class="btn btn-primary quero-orcamento">Quero um orçamento</div>
+                    <div onclick="goTo('contact')" class="btn btn-primary quero-orcamento">Faça seu orçamento</div>
                 </div>
             </div>
         </header>
@@ -57,7 +54,6 @@
                     <span class="presentation-description">
                         Criamos layouts exclusivos para suas necessidades, garantindo uma ótima experiência para seus usuários.
                     </span>
-                    <br />
                     <span class="presentation-description">
                         Acompanhado de Ilustrações 100% personalizadas para seu projeto.
                     </span>
@@ -70,7 +66,6 @@
                     <span class="presentation-description">
                         Nossa equipe garante uma página de qualidade, com suporte para mobile e tecnologia de ponta.
                     </span>
-                    <br />
                     <span class="presentation-description">
                         Acompanhado de hospedagem e manutenção do seu servidor.
                     </span>
@@ -91,7 +86,7 @@
             </div>
         </section>
 
-        <section class="do-section" id="about">
+        <!-- <section class="do-section" id="about">
             <span class="do-section-title">Como Fazemos Isso</span>
 
             <div class="do-area nd-row nd-text-center">
@@ -143,6 +138,46 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+
+        
+
+        <section class="contact-section" id="contact">
+            <span class="do-section-title">Nos envie uma mensagem</span>
+
+            <div class="contact-background">
+                <div class="nd-row">  
+                    <div class="nd-col">
+                        <form>
+                            <label id="name">
+                                Seu nome
+                                <input />
+                            </label>
+                            <label>
+                                Seu email
+                                <input />
+                            </label>
+                            <label>
+                                Seu mensagem
+                                <textarea></textarea>
+                            </label>
+
+                            <div class="btn btn-primary send">Enviar</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+        <section class="about" id="about">
+            <img src="assets/images/logo_colour.svg" />
+
+            <span class="about-title">NatusDEV</span>
+
+            <span class="about-text">
+                Somos uma empresa de desenvolvimento e tecnologia focada
+                na criação de sites responsivos e personalizados.
+            </span>
         </section>
 
         <section class="team-section" id="team">
@@ -177,66 +212,6 @@
             </div>
         </section>
 
-        <section class="contact-section" id="contact">
-            <span class="do-section-title">Contato</span>
-
-            <div class="contact-background">
-                <div class="nd-row">
-                    <div class="nd-col">
-                        <div class="contact-list">
-                            <div>
-                                <img src="assets/images/contact/tel.svg" />
-                                <span>(19) 97150-0685 / (19) 97150-0685</span>
-                            </div>
-                            <div>
-                                <img src="assets/images/contact/whats.svg" />
-                                <span>(19) 97150-0685 / (19) 97150-0685</span>
-                            </div>
-                            <div>
-                                <img src="assets/images/contact/email.svg" />
-                                <span>contato@natusdev.com</span>
-                            </div>
-
-                            <div class="btn btn-primary whatsapp">
-                                <img src="assets/images/contact/whats-white.svg" style="margin: 0"/>
-                                <span>Fale conosco via WhatsApp</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="nd-col" style="border-left: 1px solid #5A5A5A;">
-                        <form>
-                            <label>
-                                Seu nome
-                                <input />
-                            </label>
-                            <label>
-                                Seu email
-                                <input />
-                            </label>
-                            <label>
-                                Seu mensagem
-                                <textarea></textarea>
-                            </label>
-
-                            <div class="btn btn-primary send">Enviar</div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-            
-        <section class="about">
-            <img src="assets/images/logo_colour.svg" />
-
-            <span class="about-title">NatusDEV</span>
-
-            <span class="about-text">
-                Somos uma empresa de desenvolvimento e tecnologia focada
-                na criação de sites responsivos e personalizados.
-            </span>
-        </section>
-
 
         <footer class="nd-row">
             <div class="nd-col" style="max-width: 200px">
@@ -245,17 +220,17 @@
                     <span onclick="goTo('team')">Equipe</span>
                     <!-- <span>Portfólio</span> -->
                     <span onclick="goTo('about')">Sobre</span>
-                    <span onclick="goTo('contact')">Contato</span>
+                    <span onclick="goTo('contact')">Fale conosco</span>
                 </div>
             </div>
             <div class="nd-col">
                 <div class="contact-list footer">
-                    <span>(19) 97150-0685 / (19) 97150-0685</span>
-                    <span>contato@natusdev.com</span>
+                    <span><img class="whats-footer" src="assets/images/contact/whats-white.svg"/>(19) 99150-7056 / (19) 97150-0685</span>
+                    <span>contato@natus.dev</span>
                     <div>
-                        <img src="assets/images/footer/facebook.svg" />
-                        <img src="assets/images/footer/instagram.svg" />
-                        <img src="assets/images/footer/linkedin.svg" />
+                        <a href="https://www.facebook.com/natus.dev/"  target="_blank"><img src="assets/images/footer/facebook.svg" /></a>
+                        <a href="https://www.instagram.com/natus.dev/"  target="_blank"><img  src="assets/images/footer/instagram.svg" /></a>
+                        <a href="https://www.linkedin.com/company/natusdev/"  target="_blank"><img src="assets/images/footer/linkedin.svg" /></a>
                     </div>
                 </div>
             </div>
