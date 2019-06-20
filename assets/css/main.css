@@ -227,7 +227,7 @@ section {
 
 .do-section-title {
     text-align: center;
-    padding: 25px 0 60px 0;
+    padding-top: 25px;
 }
 
 .do-area {
@@ -399,7 +399,7 @@ form label textarea {
     display: block;
     width: 100%;
 
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     padding: 10px;
     color: #5A5A5A;
