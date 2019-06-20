@@ -208,7 +208,7 @@ section {
 
 .presentation-description {
     font-weight: normal;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 27px;
     
     display: block;
@@ -228,7 +228,7 @@ section {
 
 .do-section-title {
     text-align: center;
-    padding: 25px 0 85px 0;
+    padding: 25px 0 60px 0;
 }
 
 .do-area {
@@ -288,11 +288,6 @@ section {
 
 .team-section{
     margin-bottom: 95px;
-}
-
-.team-section .do-section-title{
-    font-size: 28px;
-    padding-bottom: 45px;
 }
 
 .team-member {
@@ -499,6 +494,8 @@ footer .nd-col {
     padding-right: 50px;
     bottom: 20px;
     right: 50px;
+
+    padding-bottom: 40px;
 
     font-weight: normal;
 

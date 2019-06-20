@@ -6,6 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Natus Dev</title>
 
+        <link rel="icon" type="image/ico" href="assets/images/logo_16px.png" />
+
         <link rel="stylesheet" type="text/css" href="assets/css/main.css">
         <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
         <link rel="stylesheet" type="text/css" href="assets/css/nd-grid.css">
@@ -14,11 +16,11 @@
     </head>
 
     <body>
-        <header class="header-background">
+        <header class="header-background" id="header">
             <div class="header-text">
                 <div class="nd-row">
                     <div class="nd-col" style="max-width: 35px;">
-                        <img src="assets/images/logo.svg" />
+                        <img onclick="goTo('header')" src="assets/images/logo.svg" />
                     </div>
                     
                     <div class="nd-col nd-text-right">
@@ -86,61 +88,37 @@
             </div>
         </section>
 
-        <!-- <section class="do-section" id="about">
-            <span class="do-section-title">Como Fazemos Isso</span>
-
-            <div class="do-area nd-row nd-text-center">
+        <section class="team-section" id="team">
+            <span class="do-section-title">Nossa Equipe</span>
+            <div class="nd-row nd-text-center">
                 <div class="nd-col">
-                    <div class="do-box">
-                        <div class="do-img-box">
-                            <img src="assets/images/how_we_do/screen.svg"/>
-                        </div>
-                        
-                        <span class="do-title">Layout Exclusivo</span>
-                        <div>
-                            <span class="do-list-item">Personalizado</span>
-                            <span class="do-list-item">Acessível e amigável</span>
-                            <span class="do-list-item">Responsível para o mobile</span>
-                            <span class="do-list-item">Artes sob medida para você</span>
-                        </div>
+                    <div class="team-member">
+                        <img src="assets/images/team/rodrigo.svg" />
+
+                        <span class="team-title">RODRIGO ALMEIDA</span>
+                        <span class="team-description">UX/UI Designer</span>
                     </div>
                 </div>
 
                 <div class="nd-col">
-                    <div class="do-box">
-                        <div class="do-img-box">
-                            <img src="assets/images/how_we_do/code.svg"/>
-                        </div>
-                        
-                        <span class="do-title">Desenvolvimento</span>
-                        <div>
-                            <span class="do-list-item">Tecnologia de ponta</span>
-                            <span class="do-list-item">Flexibilidade</span>
-                            <span class="do-list-item">Alta performance</span>
-                            <span class="do-list-item">Hospedagem e Manutenção</span>
-                        </div>
+                    <div class="team-member">
+                        <img src="assets/images/team/vitor.svg" />
+
+                        <span class="team-title">VITOR MARQUES</span>
+                        <span class="team-description">Desenvolvedor BACK-END</span>
                     </div>
                 </div>
 
                 <div class="nd-col">
-                    <div class="do-box">
-                        <div class="do-img-box">
-                            <img src="assets/images/how_we_do/analytics.svg"/>
-                        </div>
-                        
-                        <span class="do-title">Dados e Estatísticas</span>
-                        <div>
-                            <span class="do-list-item">Números de acessos</span>
-                            <span class="do-list-item">Cliques e outras interações</span>
-                            <span class="do-list-item">Mapas de calor</span>
-                            <span class="do-list-item">Gravações da tela</span>
-                        </div>
+                    <div class="team-member">
+                        <img src="assets/images/team/matheus.svg" />
+
+                        <span class="team-title">MATHEUS MESQUITA</span>
+                        <span class="team-description">Desenvolvedor FRONT-END</span>
                     </div>
                 </div>
             </div>
-        </section> -->
-
-        
+        </section>
 
         <section class="contact-section" id="contact">
             <span class="do-section-title">Nos envie uma mensagem</span>
@@ -176,46 +154,17 @@
 
             <span class="about-text">
                 Somos uma empresa de desenvolvimento e tecnologia focada
-                na criação de sites responsivos e personalizados.
+                na criação de produtos WEB responsivos e personalizados.
             </span>
         </section>
 
-        <section class="team-section" id="team">
-            <span class="do-section-title">Nossa Equipe</span>
-            <div class="nd-row nd-text-center">
-                <div class="nd-col">
-                    <div class="team-member">
-                        <img src="assets/images/team/rodrigo.svg" />
-
-                        <span class="team-title">RODRIGO ALMEIDA</span>
-                        <span class="team-description">UX/UI Designer</span>
-                    </div>
-                </div>
-
-                <div class="nd-col">
-                    <div class="team-member">
-                        <img src="assets/images/team/vitor.svg" />
-
-                        <span class="team-title">VITOR MARQUES</span>
-                        <span class="team-description">Desenvolvedor BACK-END</span>
-                    </div>
-                </div>
-
-                <div class="nd-col">
-                    <div class="team-member">
-                        <img src="assets/images/team/matheus.svg" />
-
-                        <span class="team-title">MATHEUS MESQUITA</span>
-                        <span class="team-description">Desenvolvedor FRONT-END</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
 
 
         <footer class="nd-row">
             <div class="nd-col" style="max-width: 200px">
                 <div class="footer-menu">
+                    <span onclick="goTo('header')">Home</span>
                     <span onclick="goTo('service')">Serviços</span>
                     <span onclick="goTo('team')">Equipe</span>
                     <!-- <span>Portfólio</span> -->
@@ -226,7 +175,7 @@
             <div class="nd-col">
                 <div class="contact-list footer">
                     <span><img class="whats-footer" src="assets/images/contact/whats-white.svg"/>(19) 99150-7056 / (19) 97150-0685</span>
-                    <span>contato@natus.dev</span>
+                    <span>contato@natus.dev</span></a>
                     <div>
                         <a href="https://www.facebook.com/natus.dev/"  target="_blank"><img src="assets/images/footer/facebook.svg" /></a>
                         <a href="https://www.instagram.com/natus.dev/"  target="_blank"><img  src="assets/images/footer/instagram.svg" /></a>
