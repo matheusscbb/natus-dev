@@ -36,6 +36,11 @@ section {
     text-decoration: none;
     display: inline-block;
 
+    padding: 0;
+    
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+
     cursor: pointer;
 }
 
@@ -82,9 +87,7 @@ section {
 .btn-primary.send {
     font-weight: 800;
     width: 300px;
-    height: 34px;
-    padding-top: 10px;
-    
+    height: 45px;
 }
 
 /* HEADER */
@@ -551,4 +554,193 @@ footer .nd-col {
 
 .pattern-final-web span {
     vertical-align: top;
+}
+
+.header-subtitle-mobile,
+.header-logo-mobile,
+.header-description-mobile,
+.footer-contact-mobile,
+.presentation-area.inverted img:first-of-type {
+    display: none;
+}
+
+@media screen and (max-width: 980px) {
+    .presentation-area {
+        margin: auto;
+        max-width: 80%;
+        text-align: center;
+
+        padding-top: 60px;
+    }
+
+    .presentation-text {
+        max-width: 400px;
+        text-align: left;
+    }
+
+    .team-section .nd-col {
+        margin-bottom: 30px;
+    }
+
+    .team-section .nd-col:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .do-section-title {
+        font-size: 26px;
+        max-width: 90%;
+        margin: 0 auto 40px auto;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .header-title {
+        font-size: 10vw;
+        margin: 0;
+    }
+
+    .header-subtitle {
+        margin: 0 auto;
+        font-size: 5vw;
+        max-width: 90%;
+    }
+
+    .slogan,
+    .presentation-area {
+        max-width: 90%;
+        text-align: center;
+        margin: 8vh auto 0 auto;
+    }
+
+    .presentation-text {
+        text-align: left;
+    }
+
+    .presentation-text {
+        margin: 20px 0 0 0 !important;
+    }
+
+    .presentation-area.inverted img:first-of-type {
+        display: block;
+        margin: auto;
+    }
+
+    .presentation-area.inverted img:last-of-type {
+        display: none;
+    }
+
+    footer {
+        background: url('../images/footer/fundo-mobile.svg') no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        width: 100%;
+    }
+
+    footer .nd-col:nth-of-type(2) {
+        display: none;
+    }
+
+    .footer-menu {
+        margin-left: 0;
+        border-left: unset;
+        text-align: center;
+
+        width: 100vw;
+    }
+
+    .footer-menu span {
+        padding-left: 0;
+    }
+
+    .footer-contact-mobile {
+        display: block;
+        margin-top: 45px;
+    }
+
+    .footer-contact-mobile a {
+        margin-left: 12px;
+    }
+
+    .footer-contact-mobile a:first-of-type {
+        margin-left: 0;
+    }
+
+    .team-section,
+    .presentation-area:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .contact-section {
+        margin-top: 20px;
+    }
+
+    .contact-background {
+        padding-bottom: 20px;
+    }
+
+    .btn-primary.send {
+        width: 80%;
+    }
+
+    .about-text {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    .header-background {
+        background: url('../images/header_background_mobile.png') no-repeat center center;
+        background-size: 100% 100%;
+        height: 100vh;
+    }
+
+    .header-logo-mobile {
+        display: block;
+        height: 75px;
+        width: auto;
+
+        margin: auto;
+        margin-top: 90px;
+    }
+
+    .header-title {
+        line-height: unset;
+        margin-top: 20px;
+        font-size: 8vw;
+    }
+
+    .header-subtitle {
+        display: none;
+    }
+
+    .header-description-mobile {
+        font-size: 18px;
+        line-height: 25px;
+
+        display: block;
+        max-width: 180px;
+
+        margin: auto;
+        margin-top: 26px;
+    }
+
+    .header-subtitle-mobile {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        display: block;
+
+        letter-spacing: 0.2em;
+
+        color: #FFF;
+    }
+
+    footer {
+        height: 450px;
+    }
 }
